@@ -1,0 +1,5 @@
+<div class="idea-session">
+  <div class="idea-session-instance" *ngFor="let session of sessions">
+    <app-session [sessionTitle]="session.sessionTitle" [sessionDesc]="session.sessionBody"></app-session>
+  </div>
+</div>

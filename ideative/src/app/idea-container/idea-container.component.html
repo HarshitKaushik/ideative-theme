@@ -1,3 +1,3 @@
-<p>
-  idea-container works!
-</p>
+<div *ngFor="let idea of ideas">
+  <app-idea [ideaTitle]="idea.title" [ideaDescription]="idea.description"></app-idea>
+</div>
