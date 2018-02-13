@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { sessions } from '../sample.data';
 
 @Component({
   selector: 'app-session-list',
@@ -11,25 +12,7 @@ export class SessionListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.sessions = [{
-      'sessionTitle': 'Idea Session Pehla',
-      'sessionBody': 'Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Ultricies lacus sed turpis tincidunt. Magna etiam tempor orci eu lobortis elementum. Blandit libero volutpat sed cras ornare arcu dui. Amet luctus venenatis lectus magna.'
-    }, {
-      'sessionTitle': 'Idea Session Dwitya',
-      'sessionBody': 'Vehicula ipsum a arcu cursus vitae congue mauris. At elementum eu facilisis sed odio morbi. Amet volutpat consequat mauris nunc congue nisi.'
-    }, {
-      'sessionTitle': 'Idea Session Trityaa',
-      'sessionBody': 'Egestas maecenas pharetra convallis posuere morbi leo urna. Eget nulla facilisi etiam dignissim diam quis. Vulputate enim nulla aliquet porttitor lacus. Volutpat diam ut venenatis tellus in metus vulputate.'
-    }, {
-      'sessionTitle': 'Idea Session Pehla',
-      'sessionBody': 'Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Ultricies lacus sed turpis tincidunt. Magna etiam tempor orci eu lobortis elementum. Blandit libero volutpat sed cras ornare arcu dui. Amet luctus venenatis lectus magna.'
-    }, {
-      'sessionTitle': 'Idea Session Dwitya',
-      'sessionBody': 'Vehicula ipsum a arcu cursus vitae congue mauris. At elementum eu facilisis sed odio morbi. Amet volutpat consequat mauris nunc congue nisi.'
-    }, {
-      'sessionTitle': 'Idea Session Trityaa',
-      'sessionBody': 'Egestas maecenas pharetra convallis posuere morbi leo urna. Eget nulla facilisi etiam dignissim diam quis. Vulputate enim nulla aliquet porttitor lacus. Volutpat diam ut venenatis tellus in metus vulputate.'
-    }];
+    this.sessions = sessions;
   }
 
 }

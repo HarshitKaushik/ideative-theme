@@ -1,3 +1,5 @@
-<div *ngFor="let idea of ideas">
-  <app-idea [ideaTitle]="idea.title" [ideaDescription]="idea.description"></app-idea>
+<div class="idea-container">
+  <div *ngFor="let idea of ideas" class="idea-box">
+    <app-idea [ideaTitle]="idea.title" [ideaDescription]="idea.description"></app-idea>
+  </div>
 </div>

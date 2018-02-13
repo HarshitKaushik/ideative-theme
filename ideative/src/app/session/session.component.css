@@ -1,13 +1,12 @@
-.idea-session-ins h3 {
+.idea-session-inside span {
   padding: 0px 20px;
-  border-style: dashed;
-  border-width: 2px;
+  font-size: 20px;
   margin: 5px 5px;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
-.idea-session-ins p {
+.idea-session-inside p {
   padding: 0px 20px;
-  border-style: dashed;
-  border-width: 2px;
   margin: 5px 5px;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }

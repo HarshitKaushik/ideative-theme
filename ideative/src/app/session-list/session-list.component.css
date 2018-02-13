@@ -1,6 +1,5 @@
 .idea-session {
-  border-style: solid;
-  border-width: 2px;
-  height: 800px;
+  height: 90vh;
   margin: 10px 20px;
+  overflow-y: scroll;
 }

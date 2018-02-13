@@ -1,12 +1,12 @@
 .idea-title {
-  margin: 10px 10px;
-  border-style: solid;
-  border-width: 2px;
+  margin: 5px 10px;
   padding: 3px 10px;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-size: 25px;
 }
 .idea-desc {
-  border-style: solid;
-  border-width: 2px;
-  margin: 10px 10px;
-  padding: 15px 10px;
+  margin: 5px 10px;
+  padding: 3px 10px;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-size: 16px;
 }
