@@ -1,11 +1,38 @@
 <div class="idea-body">
   <div class="idea-title">
-    <span>{{ideaTitle}}</span>
+    <div>
+      <div class="vote-box">
+        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+          {{81}}
+        <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+      </div>
+      <div class="title-box">
+        <span>{{ideaTitle}}</span>
+      </div>
+    </div>
   </div>
   <div class="idea-desc">
     <p>
       {{ideaDescription}}
     </p>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="idea-action-btns" id="viewIdeaDetailsId">
+        <button type="button" class="btn btn-link">View Details</button>
+      </div>
+      <div class="idea-action-btns" id="appreciateIdeaId">
+        <button type="button" class="btn btn-link">Appreciate</button>
+      </div>
+      <div class="idea-action-btns" id="reportIdeaId">
+        <button type="button" class="btn btn-link">Report</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-6" id="momentsDiv">
+      <span>Last updated: {{dummyDate | amTimeAgo}}</span>
+    </div>
   </div>
   <hr>
 </div>

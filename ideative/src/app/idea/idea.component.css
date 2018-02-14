@@ -10,3 +10,23 @@
   font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
   font-size: 16px;
 }
+#momentsDiv {
+  margin-left: 20px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.idea-action-btns {
+  display: inline;
+}
+button {
+  font-size: 12px;
+  margin-left: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.vote-box {
+  display: inline;
+}
+.title-box {
+  display: inline;
+  padding-right: 20px;
+}

@@ -9,6 +9,7 @@ export class IdeaComponent implements OnChanges {
 
   @Input() ideaTitle: string;
   @Input() ideaDescription: string;
+  dummyDate = new Date();
 
   constructor() { }
 
