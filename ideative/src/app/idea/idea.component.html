@@ -18,13 +18,13 @@
   <div class="row">
     <div class="col-md-6">
       <div class="idea-action-btns" id="viewIdeaDetailsId">
-        <button type="button" class="btn btn-link">View Details</button>
+        <button type="button" class="btn btn-link" (click)="viewDetailsModal.open()">View Details</button>
       </div>
       <div class="idea-action-btns" id="appreciateIdeaId">
         <button type="button" class="btn btn-link">Appreciate</button>
       </div>
       <div class="idea-action-btns" id="reportIdeaId">
-        <button type="button" class="btn btn-link">Report</button>
+        <button type="button" class="btn btn-link" (click)="reportIdeaModal.open()">Report</button>
       </div>
     </div>
   </div>
@@ -35,3 +35,49 @@
   </div>
   <hr>
 </div>
+<!-- Modal to open idea details when clicking the view details button -->
+<bs-modal #viewDetailsModal [size]="lg">
+  <bs-modal-body>
+    <div class="idea-body">
+      <div class="idea-title">
+        <div>
+          <div class="vote-box">
+            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+            {{81}}
+            <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+          </div>
+          <div class="title-box">
+            <span>{{ideaTitle}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="idea-desc">
+        <p>
+          {{ideaDescription}}
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6" id="momentsDiv">
+          <span>Last updated: {{dummyDate | amTimeAgo}}</span>
+        </div>
+      </div>
+    </div>
+  </bs-modal-body>
+  <bs-modal-footer [showDefaultButtons]="true"></bs-modal-footer>
+</bs-modal>
+<!-- Modal to open report idea modal when clicking report idea button -->
+<bs-modal #reportIdeaModal [size]="sm">
+  <bs-modal-body>
+    <div class="report-abuse-div">
+      <p>What do you think is wrong with this idea?</p>
+      <form>
+        <input type="radio" name="report-abuse-option" value="male">Male
+        <br>
+        <input type="radio" name="report-abuse-option" value="female">Female
+        <br>
+        <input type="radio" name="report-abuse-option" value="other">Other
+      </form>
+    </div>
+  </bs-modal-body>
+  <bs-modal-footer [showDefaultButtons]="true"></bs-modal-footer>
+</bs-modal>

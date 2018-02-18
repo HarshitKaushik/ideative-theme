@@ -8,6 +8,7 @@ import { IdeaContainerComponent } from './idea-container/idea-container.componen
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SessionListComponent } from './session-list/session-list.component';
 import { SessionComponent } from './session/session.component';
+import { BsModalModule } from 'ng2-bs3-modal';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SessionComponent } from './session/session.component';
   ],
   imports: [
     BrowserModule,
-    MomentModule
+    MomentModule,
+    BsModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
