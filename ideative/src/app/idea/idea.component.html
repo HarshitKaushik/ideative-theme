@@ -73,7 +73,7 @@
         <div *ngFor="let report of reports">
             <span><input type="radio" name="report-abuse-option" value={{report.title}}>
               {{report.title}}:
-              <span style="margin:7px; color: #999;">
+              <span id="report_description">
               {{report.description}}
               </span>
             </span>
