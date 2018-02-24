@@ -92,3 +92,33 @@ export const ideas = [
   }
 ];
 
+export const reports = [
+  {
+    'title': 'Harassment',
+    'description': 'Disparaging or adversarial towards a person or group'
+  },
+  {
+    'title': 'Spam',
+    'description': 'Undisclosed promotion for a link or product'
+  },
+  {
+    'title': 'Plagiarism',
+    'description': 'Reusing content without attribution (link and blockquotes)'
+  },
+  {
+    'title': 'Joke Idea',
+    'description': 'Not a sincere Idea'
+  },
+  {
+    'title': 'Out of Date',
+    'description': 'Is no longer relevant or accurate'
+  },
+  {
+    'title': 'Poorly Written',
+    'description': 'Not in English or has very bad formatting, grammar, and spelling'
+  },
+  {
+    'title': 'Factually Incorrect',
+    'description': 'Substantially incorrect and/or incorrect primary conclusions'
+  }
+];

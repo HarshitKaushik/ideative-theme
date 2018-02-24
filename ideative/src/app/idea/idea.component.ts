@@ -1,15 +1,18 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { reports } from './../sample.data';
+import { Component, Input, OnChanges,  OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-idea',
   templateUrl: './idea.component.html',
   styleUrls: ['./idea.component.css']
 })
-export class IdeaComponent implements OnChanges {
+// tslint:disable-next-line:one-line
+export class IdeaComponent implements OnChanges ,OnInit{
 
   @Input() ideaTitle: string;
   @Input() ideaDescription: string;
   @Input() likeCount: number = 0;
+  reports: any[];
   dummyDate = new Date();
 
   constructor() { }
@@ -19,6 +22,11 @@ export class IdeaComponent implements OnChanges {
   }
 
   ngOnChanges() {
+  }
+
+  ngOnInit() {
+    this.reports = reports;
+    console.log(reports);
   }
 
 }

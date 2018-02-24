@@ -64,17 +64,21 @@
 </bs-modal>
 <!-- Modal to open report idea modal when clicking report idea button -->
 <bs-modal #reportIdeaModal [size]="sm">
-  <bs-modal-body>
-    <div class="report-abuse-div">
-      <p>What do you think is wrong with this idea?</p>
-      <form>
-        <input type="radio" name="report-abuse-option" value="male">Male
-        <br>
-        <input type="radio" name="report-abuse-option" value="female">Female
-        <br>
-        <input type="radio" name="report-abuse-option" value="other">Other
-      </form>
-    </div>
-  </bs-modal-body>
-  <bs-modal-footer [showDefaultButtons]="true"></bs-modal-footer>
-</bs-modal>
+    <bs-modal-header>
+          <h2 class="modal-title">Report Idea</h2>
+    </bs-modal-header>
+    <bs-modal-body>
+      <div class="report-abuse-div">
+        <p>What do you think is wrong with this idea?</p>
+        <div *ngFor="let report of reports">
+            <span><input type="radio" name="report-abuse-option" value={{report.title}}>
+              {{report.title}}:
+              <span style="margin:7px; color: #999;">
+              {{report.description}}
+              </span>
+            </span>
+        </div>
+      </div>
+    </bs-modal-body>
+    <bs-modal-footer [showDefaultButtons]="true"></bs-modal-footer>
+  </bs-modal>
