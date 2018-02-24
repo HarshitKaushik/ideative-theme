@@ -1,7 +1,7 @@
 <div class="idea-body">
   <div class="idea-title">
     <div class="vote-box">
-      <span class="glyphicon glyphicon-heart" (click)="onClickingLike()"></span>
+      <span class="glyphicon glyphicon-heart" [ngClass]="{'liked-heart': likeCount > 0}" (click)="onClickingLike()"></span>
       <span id="like">{{likeCount}}</span>
     </div>
     <div class="title-box">
@@ -40,9 +40,8 @@
       <div class="idea-title">
         <div>
           <div class="vote-box">
-            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-            {{81}}
-            <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-heart" aria-hidden="true" [ngClass]="{'liked-heart': likeCount > 0}" (click)="onClickingLike()"></span>
+            {{likeCount}}
           </div>
           <div class="title-box">
             <span>{{ideaTitle}}</span>

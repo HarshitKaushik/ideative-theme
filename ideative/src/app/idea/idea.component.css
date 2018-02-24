@@ -34,3 +34,6 @@ button {
 #like {
   padding: 5px;
 }
+.liked-heart {
+  color: red;
+}

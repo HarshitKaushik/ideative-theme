@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { MomentModule } from 'angular2-moment';
 
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SessionListComponent } from './session-list/session-list.component';
 import { SessionComponent } from './session/session.component';
 import { BsModalModule } from 'ng2-bs3-modal';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,19 @@ import { BsModalModule } from 'ng2-bs3-modal';
     IdeaContainerComponent,
     NavBarComponent,
     SessionListComponent,
-    SessionComponent
+    SessionComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     MomentModule,
-    BsModalModule
+    BsModalModule,
+    RouterModule.forRoot([
+      { path: 'login', component: LoginComponent },
+      { path: 'dashboard', component: DashboardComponent},
+      { path: '', redirectTo: 'login', pathMatch: 'full'}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
