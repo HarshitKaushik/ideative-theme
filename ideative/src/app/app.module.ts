@@ -12,6 +12,8 @@ import { SessionComponent } from './session/session.component';
 import { BsModalModule } from 'ng2-bs3-modal';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AccountComponent } from './account/account.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SessionListComponent,
     SessionComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    AccountComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +35,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     RouterModule.forRoot([
       { path: 'login', component: LoginComponent },
       { path: 'dashboard', component: DashboardComponent},
+      { path: 'settings', component: SettingsComponent},
+      { path: 'account', component: AccountComponent},
       { path: '', redirectTo: 'login', pathMatch: 'full'}
     ])
   ],
