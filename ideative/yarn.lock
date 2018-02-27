@@ -27,7 +27,7 @@
     "@ngtools/json-schema" "^1.1.0"
     rxjs "^5.5.6"
 
-"@angular/animations@^5.0.0":
+"@angular/animations@^5.2.6":
   version "5.2.6"
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-5.2.6.tgz#433aace8929ce362762dcccdb5044c3945a194bd"
   dependencies:
@@ -3632,6 +3632,12 @@ negotiator@0.6.1:
 ng2-bs3-modal@^0.13.0:
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/ng2-bs3-modal/-/ng2-bs3-modal-0.13.0.tgz#e501a660a968668b44cc28252c310fdd67e4fd7a"
+
+ngx-toastr@^8.2.1:
+  version "8.2.1"
+  resolved "https://registry.yarnpkg.com/ngx-toastr/-/ngx-toastr-8.2.1.tgz#86cffec666a9dadde5f8a37f2a8fe2ab527b3dde"
+  dependencies:
+    tslib "^1.7.1"
 
 no-case@^2.2.0:
   version "2.3.2"

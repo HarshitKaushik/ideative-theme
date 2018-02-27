@@ -6,10 +6,12 @@
           <div class="tab-pane active" id="login">
             <img class="ideative-logo" src="../../assets/ideative142x142.png"
               alt="ideative">
-            <form class="form-signin" action="" method="">
-              <input type="text" class="form-control" placeholder="Username" required autofocus>
-              <input type="password" class="form-control" placeholder="Password" required>
-              <input type="button" class="btn btn-lg btn-default btn-block" value="Sign In" />
+            <form class="form-signin" (ngSubmit)="submitLoginForm()" #loginForm="ngForm">
+              <input type="text" class="form-control" placeholder="Username" required 
+                [(ngModel)]="email" name="email" autofocus>
+              <input type="password" class="form-control" placeholder="Password" 
+                [(ngModel)]="password" name="password" required>
+              <input type="submit" class="btn btn-lg btn-default btn-block" value="Sign In" />
             </form>
             <div id="tabs" data-tabs="tabs">
               <p class="text-center">
