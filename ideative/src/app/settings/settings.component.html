@@ -1,4 +1,27 @@
 <app-nav-bar></app-nav-bar>
-<p>
-  settings works!
-</p>
+<div class="row">
+  <div class="col-md-4 col-sm-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          Settings
+        </h3>
+      </div>
+      <ul class="list-group">
+        <a (click)="setChosenSettings(1)" class="list-group-item">General Settings</a>
+        <a (click)="setChosenSettings(2)" class="list-group-item">Emails & Notifs</a>
+        <a (click)="setChosenSettings(3)" class="list-group-item">Connected Services</a>
+        <a (click)="setChosenSettings(4)" class="list-group-item">Terms & License</a>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-8 col-sm-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          {{chosenSettingsName}}
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
